@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/chessboard-0.3.0.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/chessboard-0.3.0.min.js"></script>
+<script>
+function board (fen) {
+	var element = document.createElement ('div');
+	element.setAttribute ('style', 'width: 384px;');
+	document.body.appendChild (element);
+	new ChessBoard (element, {position: fen, draggable: true});
+}
+</script>
+</head>
+<body>
+<h3>100</h3>
+<script>board ('8/q7/8/p3Q1Nk/P2p4/8/1n6/Kn6');</script>
+<h3>101</h3>
+<script>board ('K1k5/3p2q1/5N1b/8/2p5/8/3P2n1/Q7');</script>
+<h3>102</h3>
+<script>board ('5Q2/1b1q4/1P5N/1p1P4/3k4/8/8/2K5');</script>
+<h3>103</h3>
+<script>board ('Q7/7q/4p3/K1k5/3p1P1p/2N5/5P2/5b2');</script>
+<h3>104</h3>
+<script>board ('7b/4p3/1k6/4pQ2/K4N1q/7p/6PP/8');</script>
+<h3>356</h3>
+<script>board ('8/8/4P3/8/2Pr4/4k2B/6P1/7K');</script>
+<h3>357</h3>
+<script>board ('8/p3B2p/1P5P/3P4/5r2/3k4/8/6K1');</script>
+<h3>358</h3>
+<script>board ('2K5/8/3p1pP1/8/2P5/1B5k/1r5P/8');</script>
+<h3>359</h3>
+<script>board ('7k/2p4p/P3P3/6P1/8/P6r/4B3/1b4K1');</script>
+<h3>360</h3>
+<script>board ('8/8/2B1P2K/8/4P1kn/2r5/7P/8');</script>
+</body>
+</html>
